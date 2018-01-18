@@ -2,33 +2,32 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Bootsrap Portfolio - Home</title>
+    <title>Bootsrap Portfolio - contact</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
   <body style="background-image:url('assets/images/hypnotize.png')">
-
     <div class="container">
-
-      <div class="container-fluid mb-5"><!--main navbar container, 100% wide all the time. -->
+      <!--main navbar container, 100% wide all the time. -->
+      <div class="container-fluid mb-5">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light p-0 mb-4">
           <div class="container">
             <div class="text-white p-3 m-0" style="font-family: 'Georgia', Times, Times New Roman, serif; background-color: #4aaaa5">
               <h1 class="font-weight-bold">Craig Christensen</h1>
             </div>
-            <ul class="nav navbar-collapse-lg collapse"><!-- links to other pages -->
+            <ul class="nav navbar-collapse-lg collapse"><!-- links to this website's other pages -->
               <li class="nav-item">
-                <a class="nav-link text-muted active" href="index.html"><h6>About</h6></a>
+                <a class="nav-link text-muted" href="index.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-muted" href="portfolio.html">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-muted" href="contact.html">Contact</a>
+                <a class="nav-link text-muted active" href="contact.html"><h6>Contact</h6></a>
               </li>
-            </ul><!--end of nav-->
+            </ul><!--end of links-->
           </div><!-- end inner navbar container -->
         </nav>
       </div><!-- End of outer navbar container -->
@@ -36,22 +35,29 @@
       <div  >
         <div class="container p-0 pt-5"><!-- content container -->
           <div class="row mb-5">
-            <!-- main content -->
-            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 border border-light bg-white mt-5 ml-4 mb-5 mr-5">
+            <!-- email form -->
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 border border-light bg-white p-5 mt-5 ml-4 mb-5 mr-5">
               <div class="p-3 m-0" style="color: #4aaaa5; font-family: 'Georgia', Times, Times New Roman, serif;">
-                <h2 class="mb-0 p-0 font-weight-bold">About Me</h2>
+                <h2 class="ml-0 mb-0 p-0 font-weight-bold">Contact</h2>
               </div>
               <hr>
-              <div ><!-- bio -->
-                <img class="float-left mr-2" title="The Developer" src="assets/images/headshot.png" alt="Craig Christensen" height="120" width="130">
-                <p class="lead">
-                  Vehicle crypto- tattoo narrative San Francisco meta- semiotics assault free-market saturation point franchise sentient carbon geodesic shrine. kanji beef noodles sign shoes Chiba market monofilament tank-traps weathered industrial grade cyber.
-                </p>
-                <p class="lead">
-                  Space industrial grade long-chain hydrocarbons film. table tube advert spook order-flow systemic corrupted semiotics neural neural grenade city A.I. dolphin car. tank-traps construct chrome tanto sensory knife -ware saturation point youtube cyber- dome assault BASE jump.
-                </p>
-              </div> <!--end of bio div -->
-            </div><!-- end main content -->
+
+              <form>
+                <div class="form-group">
+                  <label class="text-muted">Name</label>
+                  <input type="text" class="form-control text-muted" placeholder="John Smith" >
+                </div>
+                <div class="form-group">
+                  <label class="text-muted">Email</label>
+                  <input type="email" class="form-control text-muted" placeholder="Example@gmail.com">
+                </div>
+                <div class="form-group">
+                  <label for="message" class="text-muted">Message</label>
+                  <textarea id="message" class="form-control text-muted" name="message" placeholder="" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn" style="background-color: #4aaaa5; color: white">Submit</button>
+              </form>
+            </div>
 
             <!-- connect links box -->
             <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 border border-light bg-white p-3 mt-5 mb-5" style="height: 100%;">
@@ -73,7 +79,7 @@
       </div>
     </div> <!-- end of main container -->
     <!-- footer -->
-    <div id="footer" class="container-fluid justify-content-center bg-secondary p-3 fixed-bottom mt-5" style="border-top: 5px; border-top: 5px;">
+    <div id="footer" class="container-fluid justify-content-center bg-secondary p-3 fixed-bottom mt-5">
       <p class="d-flex justify-content-center pt-2"><small>&copy; Copyright 2017 Craig Christensen</small></p>
     </div>
 
